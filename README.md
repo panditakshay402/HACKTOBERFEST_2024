@@ -5,11 +5,11 @@ Welcome to the HACKTOBERFEST_2024 repository! We are excited to participate in H
 ## How to Contribute
 
 1. **Fork the repository**: Click on the 'Fork' button at the top right corner of this page to create a copy of this repository in your GitHub account.
-2. **Clone the repository**: Clone the forked repository to your local machine using `git clone <your-forked-repo-url>`.
-3. **Create a new branch**: Create a new branch for your contribution using `git checkout -b <branch-name>`.
+2. **Clone the repository**: Clone the forked repository to your local machine using `git clone https://github.com/panditakshay402/HACKTOBERFEST_2024`.
+3. **Create a new branch**: Create a new branch for your contribution using `git checkout -b main`.
 4. **Make your changes**: Add your DSA solutions, personal projects, or optimized code.
 5. **Commit your changes**: Commit your changes with a meaningful message using `git commit -m "Your commit message"`.
-6. **Push your changes**: Push your changes to your forked repository using `git push origin <branch-name>`.
+6. **Push your changes**: Push your changes to your forked repository using `git push origin main`.
 7. **Create a Pull Request**: Go to the original repository and create a pull request from your forked repository.
 
 ## Contribution Guidelines
