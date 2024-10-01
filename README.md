@@ -3,7 +3,7 @@
 Welcome to the HACKTOBERFEST_2024 repository! We are excited to participate in Hacktoberfest and welcome your contributions. This repository is open for various types of contributions including Data Structures and Algorithms (DSA), personal projects, and optimized code.
 
 ## How to Contribute
-
+    Follow and Star The Repo is Mandatory and also add labels(hacktoberfest,Hacktoberfest_accepted).
 1. **Fork the repository**: Click on the 'Fork' button at the top right corner of this page to create a copy of this repository in your GitHub account.
 2. **Clone the repository**: Clone the forked repository to your local machine using `git clone https://github.com/panditakshay402/HACKTOBERFEST_2024`.
 3. **Create a new branch**: Create a new branch for your contribution using `git checkout -b main`.
