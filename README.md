@@ -27,8 +27,12 @@ Welcome to the HACKTOBERFEST_2024 repository! We are excited to participate in H
 
 ## Rules
 
-1. **Quality over Quantity**: We value high-quality contributions over a large number of low-quality ones.
-2. **Respect Deadlines**: Ensure your pull requests are submitted before the Hacktoberfest deadline.
-3. **Follow the Code of Conduct**: Be respectful and considerate to others in the community.
+1. **FOLLOW** and **STAR THE REPO** is **MANDATORY** and also add labels(hacktoberfest,Hacktoberfest_accepted)
+
+2. **Quality over Quantity**: We value high-quality contributions over a large number of low-quality ones.
+   
+3. **Respect Deadlines**: Ensure your pull requests are submitted before the Hacktoberfest deadline
+
+4. **Follow the Code of Conduct**: Be respectful and considerate to others in the community.
 
 Thank you for contributing to the Hacktoberfest! Happy coding!
