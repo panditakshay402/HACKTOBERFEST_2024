@@ -27,7 +27,7 @@ Welcome to the HACKTOBERFEST_2024 repository! We are excited to participate in H
 
 ## Rules
 
-1. **FOLLOW** and **STAR THE REPO** is **MANDATORY** and also add labels(hacktoberfest,Hacktoberfest_accepted)
+1. **FOLLOW** and **STAR THE REPO** is **MANDATORY** 
 
 2. **Quality over Quantity**: We value high-quality contributions over a large number of low-quality ones.
    
