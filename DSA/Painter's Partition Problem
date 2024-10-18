@@ -1,0 +1,74 @@
+#include <iostream>
+using namespace std;
+
+class Solution {
+public:
+    int minTime(int arr[], int n, int m) {
+        // Initialize the start and end for binary search
+        int start = 0, end = 0, mid, ans;
+        
+        // Calculate the max of all elements as start and the sum as end
+        for (int i = 0; i < n; i++) {
+            start = max(start, arr[i]); // Max length of any board
+            end += arr[i];              // Sum of all board lengths
+        }
+
+        // Binary search for the minimum time
+        while (start <= end) {
+            mid = start + (end - start) / 2;
+            int page = 0, count = 1;
+
+            // Check if we can divide the boards into 'm' painters
+            for (int i = 0; i < n; i++) {
+                page += arr[i];
+                if (page > mid) {
+                    count++; // Assign to the next painter
+                    page = arr[i];
+                }
+            }
+
+            if (count <= m) {
+                ans = mid;    // Update the result
+                end = mid - 1; // Try to find a smaller maximum time
+            } else {
+                start = mid + 1; // Increase the minimum time
+            }
+        }
+        return ans;
+    }
+};
+
+int main() {
+    // Example Test Case
+    Solution obj;
+    int n, m;
+    
+    // Input number of boards and painters
+    cout << "Enter the number of boards: ";
+    cin >> n;
+    
+    cout << "Enter the number of painters: ";
+    cin >> m;
+    
+    // Input the lengths of the boards
+    int arr[n];
+    cout << "Enter the lengths of the boards: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    // Call the function and output the minimum time required
+    int result = obj.minTime(arr, n, m);
+    cout << "The minimum time required to paint all boards is: " << result << endl;
+
+    return 0;
+}
+
+
+
+/*OUTPUT
+Enter the number of boards: 4
+Enter the number of painters: 2
+Enter the lengths of the boards: 5 10 30 20 15
+The minimum time required to paint all boards is: 45
+*/
