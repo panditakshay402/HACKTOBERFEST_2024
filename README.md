@@ -1,4 +1,4 @@
-# HACKTOBERFEST_2024
+# HACKTOBERFEST 2024
 
 Welcome to the HACKTOBERFEST_2024 repository! We are excited to participate in Hacktoberfest and welcome your contributions. This repository is open for various types of contributions including Data Structures and Algorithms (DSA), personal projects, and optimized code.
 
