@@ -1,40 +1,58 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct Node
-{
-    int data;
-    struct Node *left, *right;
-    Node(int v)
-    {
-        data = v;
-        left = right = NULL;
-    }
+// Definition for a binary tree node.
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-// inorder traversal function
-void printInorder(struct Node *node)
-{
-    if (node == NULL)
-        return;
-    // left subtree
-    printInorder(node->left);
-    // print the node data
-    cout << node->data << " ";
-    // right subtree
-    printInorder(node->right);
+// Function to insert a node in a Binary Search Tree (BST)
+TreeNode* insert(TreeNode* root, int val) {
+    if (root == NULL) {
+        return new TreeNode(val);
+    }
+    if (val < root->val) {
+        root->left = insert(root->left, val);
+    } else {
+        root->right = insert(root->right, val);
+    }
+    return root;
 }
 
-int main()
-{
-    struct Node *root = new Node(1);
-    root->left = new Node(2);
-    root->right = new Node(3);
-    root->left->left = new Node(4);
-    root->left->right = new Node(5);
-    root->right->right = new Node(6);
+// Inorder Traversal of the Binary Tree
+void inorderTraversal(TreeNode* root) {
+    if (root == NULL) {
+        return;
+    }
+    inorderTraversal(root->left);  // Traverse left subtree
+    cout << root->val << " ";      // Visit node
+    inorderTraversal(root->right); // Traverse right subtree
+}
 
-    printInorder(root);
-
+int main() {
+    TreeNode* root = NULL;
+    int n, val;
+    // Taking number of elements as input
+    cout << "Enter the number of nodes: ";
+    cin >> n;
+    // Taking node values as input
+    cout << "Enter the values of the nodes:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> val;
+        root = insert(root, val); // Insert each value in the BST
+    }
+    // Performing inorder traversal
+    cout << "Inorder Traversal: ";
+    inorderTraversal(root);
+    cout << endl;
     return 0;
 }
+
+// Enter the number of nodes: 5
+// Enter the values of the nodes:
+// 4 2 5 1 3
+// Inorder Traversal: 1 2 3 4 5
